@@ -10,14 +10,18 @@ One static page: a short intro, the two apps I've launched, and a way to get
 in touch. No framework, no build step, no dependencies.
 
 ```
-index.html          markup + all copy
-styles.css          design tokens, layout, light/dark themes
-script.js           theme toggle, scroll reveals, active nav link
-404.html            fallback page
-qr-securenotes.svg  Play Store QR — com.angs.securenotes
-qr-appshield.svg    Play Store QR — com.angs.appshield
-.nojekyll           tells GitHub Pages to serve files as-is
+index.html             markup + all copy
+styles.css             design tokens, layout, light/dark themes
+script.js              theme toggle, scroll reveals, active nav link
+404.html               fallback page
+icon-securenotes.png   real app icon, 192px, transparent corners
+icon-appshield.png     real app icon, 192px, transparent corners
+qr-securenotes.svg     Play Store QR — com.angs.securenotes
+qr-appshield.svg       Play Store QR — com.angs.appshield
+.nojekyll              tells GitHub Pages to serve files as-is
 ```
+
+The whole site is about 117 KB.
 
 ## Running it locally
 
@@ -51,6 +55,25 @@ and edit in place.
 To add a third app, copy an `<article class="appcard">` block inside
 `.app-grid` and change the text; the grid reflows on its own. You'll also want
 a QR for it — see below.
+
+### Regenerating the app icons
+
+`icon-*.png` are the real store icons, downscaled to 192px (3× the 64px
+display size) from the source apps:
+
+- `secure-notes/assets/images/icon.png`
+- `app-shield/assets/icon.png`
+
+The Secure Notes source already has transparent corners. **The AppShield
+source does not** — it's RGB with an opaque white background, so dropping it
+in as-is produces a light-grey outline on the dark card. To fix it, flood-fill
+the background inward from the four corners using a *generous* luminance
+threshold (~140, not ~240) so the anti-aliased grey ramp is caught too, then
+recolour those pixels to the icon's own dark navy before downscaling —
+otherwise LANCZOS blends the discarded white back in around the edge.
+
+A geometric rounded-rect mask does **not** work here: the source corner isn't
+a true circular arc, so the mask diverges from it and leaks white at the arcs.
 
 ### Regenerating the QR codes
 
