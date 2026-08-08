@@ -523,20 +523,17 @@ strong { font-weight: 620; color: var(--text); }
   box-shadow: var(--shadow-lift);
 }
 
+/* The real store icons — they carry their own artwork, background and
+   rounded corners, so no box or border here. drop-shadow follows the
+   alpha edge, unlike box-shadow, which would square off the corners. */
 .appcard__icon {
-  display: grid;
-  place-items: center;
-  width: 54px; height: 54px;
-  border-radius: var(--r-md);
-  background: var(--accent-wash);
-  border: 1px solid var(--accent-line);
-  color: var(--accent);
+  width: 64px;
+  height: 64px;
   margin-bottom: 1.35rem;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, .35));
 }
-.appcard__icon svg {
-  width: 27px; height: 27px;
-  fill: none; stroke: currentColor;
-  stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round;
+:root[data-theme="light"] .appcard__icon {
+  filter: drop-shadow(0 3px 10px rgba(30, 25, 20, .22));
 }
 
 .applist {
