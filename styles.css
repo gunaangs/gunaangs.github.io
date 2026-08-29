@@ -13,7 +13,7 @@
                "Roboto Mono", Menlo, Consolas, monospace;
 
   /* Rhythm */
-  --shell: 1140px;
+  --shell: min(1360px, 94vw);
   --gap: clamp(1rem, 2.4vw, 1.75rem);
   --section-y: clamp(4.5rem, 11vw, 9rem);
 
@@ -496,22 +496,23 @@ strong { font-weight: 620; color: var(--text); }
 
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: clamp(1.25rem, 2.2vw, 1.85rem);
 }
 
 .appcard {
+  container-type: inline-size;
   display: flex;
   flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
-  padding: clamp(1.6rem, 3.2vw, 2.15rem);
+  padding: clamp(1.4rem, 2.4vw, 1.95rem);
   box-shadow: var(--shadow);
   transition: border-color .28s var(--ease), transform .28s var(--ease),
               box-shadow .28s var(--ease);
 }
-/* Let the download row sink to the bottom so both cards line up. */
+/* Let the download row sink to the bottom so all cards line up. */
 .appcard__body {
   display: flex;
   flex-direction: column;
@@ -542,6 +543,7 @@ strong { font-weight: 620; color: var(--text); }
   margin-top: 1.3rem;
   padding-top: 1.2rem;
   border-top: 1px solid var(--line-soft);
+  margin-bottom: 1.5rem;
 }
 .applist li {
   position: relative;
@@ -566,18 +568,17 @@ strong { font-weight: 620; color: var(--text); }
 .getapp {
   display: flex;
   align-items: center;
-  gap: 1.15rem;
+  gap: 1rem;
   margin-top: auto;          /* bottom-align across cards of differing length */
-  padding-top: 1.4rem;
+  padding-top: 1.3rem;
   border-top: 1px solid var(--line-soft);
 }
-.applist { margin-bottom: 1.5rem; }
 
 /* The QR is always dark-on-white so it scans in either theme. */
 .getapp__qr {
   flex-shrink: 0;
   display: block;
-  padding: 6px;
+  padding: 5px;
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--r-md);
@@ -585,20 +586,40 @@ strong { font-weight: 620; color: var(--text); }
   transition: border-color .2s var(--ease), transform .2s var(--ease);
 }
 .getapp__qr:hover { border-color: var(--accent-line); transform: scale(1.03); }
-.getapp__qr img { width: 100px; height: 100px; }
+.getapp__qr img { width: 84px; height: 84px; }
 
 .getapp__cta {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.6rem;
+  gap: 0.55rem;
   min-width: 0;
+  flex: 1;
 }
 .getapp__hint {
   margin: 0;
   font-size: 0.815rem;
   line-height: 1.45;
   color: var(--text-dim);
+}
+
+@container (max-width: 320px) {
+  .getapp {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+  .getapp__qr {
+    align-self: center;
+  }
+  .getapp__cta {
+    align-items: stretch;
+    text-align: center;
+  }
+  .btn--play {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 /* ---------- Tag list ---------- */

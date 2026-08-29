@@ -6,7 +6,7 @@ Live at **<https://gunaangs.github.io>**.
 
 ## What this is
 
-One static page: a short intro, the two apps I've launched, and a way to get
+One static page: a short intro, the three apps I've launched, and a way to get
 in touch. No framework, no build step, no dependencies.
 
 ```
@@ -16,8 +16,10 @@ script.js              theme toggle, scroll reveals, active nav link
 404.html               fallback page
 icon-securenotes.png   real app icon, 192px, transparent corners
 icon-appshield.png     real app icon, 192px, transparent corners
+icon-pixelsqueeze.png  real app icon, 192px, transparent corners
 qr-securenotes.svg     Play Store QR — com.angs.securenotes
 qr-appshield.svg       Play Store QR — com.angs.appshield
+qr-pixelsqueeze.svg    Play Store QR — com.angs.pixelsqueeze
 .nojekyll              tells GitHub Pages to serve files as-is
 ```
 
