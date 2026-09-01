@@ -63,19 +63,12 @@ a QR for it — see below.
 `icon-*.png` are the real store icons, downscaled to 192px (3× the 64px
 display size) from the source apps:
 
-- `secure-notes/assets/images/icon.png`
+- `secure-notes` (via `app-shield/assets/promo/secure-notes.png` or `pixel-squeeze/assets/promo/secure-notes.png`)
 - `app-shield/assets/icon.png`
+- `pixel-squeeze/assets/icon.png`
 
-The Secure Notes source already has transparent corners. **The AppShield
-source does not** — it's RGB with an opaque white background, so dropping it
-in as-is produces a light-grey outline on the dark card. To fix it, flood-fill
-the background inward from the four corners using a *generous* luminance
-threshold (~140, not ~240) so the anti-aliased grey ramp is caught too, then
-recolour those pixels to the icon's own dark navy before downscaling —
-otherwise LANCZOS blends the discarded white back in around the edge.
-
-A geometric rounded-rect mask does **not** work here: the source corner isn't
-a true circular arc, so the mask diverges from it and leaks white at the arcs.
+All source icons have transparent corners and RGBA channels. Use LANCZOS
+downsampling when resizing to 192×192.
 
 ### Regenerating the QR codes
 
