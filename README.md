@@ -6,7 +6,7 @@ Live at **<https://gunaangs.github.io>**.
 
 ## What this is
 
-One static page: a short intro, the three apps I've launched, and a way to get
+One static page: a short intro, the four apps I've launched, and a way to get
 in touch. No framework, no build step, no dependencies.
 
 ```
@@ -17,9 +17,11 @@ script.js              theme toggle, scroll reveals, active nav link
 icon-securenotes.png   real app icon, 192px, transparent corners
 icon-appshield.png     real app icon, 192px, transparent corners
 icon-pixelsqueeze.png  real app icon, 192px, transparent corners
+icon-moneywise.png     real app icon, 192px, transparent corners
 qr-securenotes.svg     Play Store QR — com.angs.securenotes
 qr-appshield.svg       Play Store QR — com.angs.appshield
 qr-pixelsqueeze.svg    Play Store QR — com.angs.pixelsqueeze
+qr-moneywise.svg       Play Store QR — com.angs.moneywise
 .nojekyll              tells GitHub Pages to serve files as-is
 ```
 
@@ -66,6 +68,7 @@ display size) from the source apps:
 - `secure-notes` (via `app-shield/assets/promo/secure-notes.png` or `pixel-squeeze/assets/promo/secure-notes.png`)
 - `app-shield/assets/icon.png`
 - `pixel-squeeze/assets/icon.png`
+- `money-wise/assets/icon.png`
 
 All source icons have transparent corners and RGBA channels. Use LANCZOS
 downsampling when resizing to 192×192.
