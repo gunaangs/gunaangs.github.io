@@ -603,6 +603,32 @@ strong { font-weight: 620; color: var(--text); }
   color: var(--text-dim);
 }
 
+.appcard__privacy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.815rem;
+  font-weight: 550;
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--r-full);
+  border: 1px solid var(--line-soft);
+  background: var(--surface-2);
+  transition: border-color .2s var(--ease), color .2s var(--ease), background .2s var(--ease);
+}
+.appcard__privacy:hover {
+  color: var(--accent);
+  border-color: var(--accent-line);
+  background: var(--accent-wash);
+  text-decoration: none;
+}
+.appcard__privacy svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+}
+
 @container (max-width: 320px) {
   .getapp {
     flex-direction: column;
@@ -708,6 +734,13 @@ strong { font-weight: 620; color: var(--text); }
 .footer p { margin: 0; font-size: 0.86rem; color: var(--text-dim); }
 .footer a { color: var(--text-mid); transition: color .2s var(--ease); }
 .footer a:hover { color: var(--accent); }
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
 
 /* ---------- Reveal on scroll ---------- */
 
