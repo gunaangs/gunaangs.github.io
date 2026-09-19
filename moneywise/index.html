@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MoneyWise: Expense &amp; Budget</title>
+  <meta name="description" content="Privacy Policy for MoneyWise: Expense & Budget (com.angs.moneywise) by ANGS Corp. 100% offline, local-first personal finance and budget manager.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0F1117;
+      --card-bg: #1A1D27;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text: #F3F4F6;
+      --text-muted: #9CA3AF;
+      --accent: #3B82F6;
+      --accent-light: #60A5FA;
+      --accent-bg: rgba(59, 130, 246, 0.12);
+      --code-bg: #11131A;
+      --max-width: 860px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F9FAFB;
+        --card-bg: #FFFFFF;
+        --card-border: rgba(0, 0, 0, 0.08);
+        --text: #111827;
+        --text-muted: #4B5563;
+        --accent: #2563EB;
+        --accent-light: #3B82F6;
+        --accent-bg: rgba(59, 130, 246, 0.12);
+        --code-bg: #F3F4F6;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 64px 16px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .breadcrumb-nav {
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--accent-light);
+      text-decoration: none;
+      padding: 6px 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-bg);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 32px 24px;
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-bg);
+      color: var(--accent-light);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 18px 0 8px 0;
+      color: var(--text);
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    ul, ol {
+      margin: 12px 0 16px 24px;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .highlight-box {
+      background: var(--accent-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border-left: 4px solid #EF4444;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .warning-box p:last-child,
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border: 1px solid var(--card-border);
+      padding: 12px 16px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--code-bg);
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    code {
+      font-family: monospace;
+      font-size: 0.88em;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    a {
+      color: var(--accent-light);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 12px 48px 12px;
+      }
+      header {
+        padding: 24px 16px;
+      }
+      .card {
+        padding: 20px 16px;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      th, td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="breadcrumb-nav">
+      <a href="../index.html" class="back-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        ANGS Corp Developer Privacy Center
+      </a>
+    </nav>
+
+    <header>
+      <div class="badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        100% Offline &amp; Local Personal Finance
+      </div>
+      <h1>Privacy Policy for MoneyWise: Expense &amp; Budget</h1>
+      <div class="meta">
+        <span>Application: <strong>MoneyWise: Expense &amp; Budget</strong></span>
+        <span>Developer: <strong>ANGS Corp</strong></span>
+        <span>Package: <code>com.angs.moneywise</code></span>
+        <span>Last Updated: <strong>September 19, 2026</strong></span>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2>1. Overview &amp; Privacy Philosophy</h2>
+      <p>Welcome to <strong>MoneyWise: Expense &amp; Budget</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;), developed and published by <strong>ANGS Corp</strong>.</p>
+      <p>MoneyWise is a smart, offline personal budgeting and expense tracking utility. We believe that your personal financial records are entirely private. MoneyWise does <strong>not</strong> require bank logins, does not link to third-party financial data aggregators, and does not operate centralized database servers holding your income, expenditures, or account balances.</p>
+      <div class="highlight-box">
+        <p><strong>100% Local-First Bookkeeping:</strong> All accounts, expense categories, transactions, recurring bills, receipt images, and financial goals are processed and stored exclusively on your device hardware.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2. Financial Data Handled &amp; Storage Protections</h2>
+      <p>MoneyWise processes only the financial records you voluntarily record:</p>
+      <ul>
+        <li><strong>Account Profiles:</strong> Custom account names, currency choices, and manual balance tallies (no real bank account numbers or online banking credentials are ever collected or required).</li>
+        <li><strong>Transaction History:</strong> Income, expense amounts, timestamps, tags, payee notes, and categories.</li>
+        <li><strong>Budget Targets &amp; Goals:</strong> Monthly budget thresholds and savings target progress.</li>
+        <li><strong>Receipt Attachments:</strong> Digital photographs of receipts attached to transactions, stored directly in the app's local sandbox.</li>
+      </ul>
+      <p>All records are stored locally in the isolated application database on your device and are never transmitted to developer servers.</p>
+    </div>
+
+    <div class="card">
+      <h2>3. Device Permissions and Usage</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Purpose</th>
+            <th>Data Handling</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Camera</strong></td>
+            <td>Used to capture photos of receipts directly into transaction records.</td>
+            <td>Processed strictly on-device; never uploaded.</td>
+          </tr>
+          <tr>
+            <td><strong>Photos &amp; Storage</strong></td>
+            <td>Used to select receipt images or save exported financial spreadsheets (CSV, PDF, JSON).</td>
+            <td>Saved exclusively to your local device.</td>
+          </tr>
+          <tr>
+            <td><strong>Notifications</strong></td>
+            <td>Delivers on-device budget threshold alerts and recurring bill reminders.</td>
+            <td>Scheduled locally via device alarm managers; no remote push tracking.</td>
+          </tr>
+          <tr>
+            <td><strong>Biometrics</strong></td>
+            <td>Optional fingerprint or Face ID lock to protect access to your financial records.</td>
+            <td>Handled entirely by the operating system keystore; the app never sees raw biometrics.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>4. Third-Party Services</h2>
+      <p>MoneyWise operates core financial management completely offline. Third-party integration is strictly confined:</p>
+      <h3>Google Mobile Ads (AdMob)</h3>
+      <ul>
+        <li>MoneyWise displays advertisements provided by Google Mobile Ads.</li>
+        <li><strong>Consent Management:</strong> We integrate Google's User Messaging Platform (UMP) for GDPR and CCPA compliance.</li>
+        <li><strong>Complete Separation:</strong> The advertising SDK runs in an isolated container and has <strong>zero access</strong> to your transactions, account balances, budgets, or receipt attachments.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. Local Storage Architecture, Data Theft Disclaimer &amp; Limitation of Liability</h2>
+      <div class="warning-box">
+        <p><strong>Important Legal Notice:</strong> MoneyWise is an offline personal ledger utility. ANGS Corp operates no servers, financial databases, or cloud accounts holding your financial data. Because your data remains strictly on your personal hardware, <strong>ANGS Corp bears no legal responsibility or liability for any financial data leaks, device theft, unauthorized access, or loss occurring on your device.</strong></p>
+      </div>
+
+      <h3>5.1 Zero Server Custody</h3>
+      <p>ANGS Corp never receives, views, audits, or sells your financial records. We have no access to your balances, expenses, or transactions.</p>
+
+      <h3>5.2 Comprehensive Disclaimer for On-Device Compromises</h3>
+      <p>Under no circumstances shall ANGS Corp be held legally or financially responsible for:</p>
+      <ol>
+        <li><strong>Physical Loss or Device Theft:</strong> Physical theft of your phone, loss of custody, or unauthorized inspection while unlocked.</li>
+        <li><strong>Malware &amp; Spyware:</strong> Malicious apps, keyloggers, or unauthorized screen scrapers installed on your device that record inputs or screen contents.</li>
+        <li><strong>User Negligence:</strong> Failure to set strong device locks or app biometric locks, or accidental deletion of transaction databases.</li>
+        <li><strong>Rooted or Modified Environments:</strong> Operating system vulnerabilities on rooted, jailbroken, or custom ROM devices.</li>
+        <li><strong>Financial Decisions:</strong> MoneyWise is a bookkeeping tool; ANGS Corp does not provide certified financial, tax, or investment advice.</li>
+      </ol>
+
+      <h3>5.3 "AS IS" Warranty &amp; Statutory Limitation of Liability</h3>
+      <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, MONEYWISE IS PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND. ANGS CORP DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, AND SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL LOSSES RESULTING FROM DATA LOSS OR COMPROMISE.</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>6. Data Retention &amp; User Control</h2>
+      <p>You retain full sovereignty over your financial logs:</p>
+      <ul>
+        <li><strong>Export:</strong> You can export your financial history at any time in standard formats (CSV, PDF, JSON).</li>
+        <li><strong>Reset:</strong> You can clear your database or reset accounts at any time from Settings.</li>
+        <li><strong>App Uninstallation:</strong> Deleting the app immediately destroys the local database and sandbox records.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. Children's Privacy</h2>
+      <p>MoneyWise is not directed toward children under 13 years of age. We do not knowingly collect personal information from children.</p>
+    </div>
+
+    <div class="card">
+      <h2>8. Policy Updates &amp; Contact</h2>
+      <p>We may update this Privacy Policy periodically. Changes will be posted on this page with an updated &ldquo;Last Updated&rdquo; date.</p>
+      <p>If you have questions regarding this Privacy Policy, please contact us:</p>
+      <ul>
+        <li><strong>Organization:</strong> ANGS Corp</li>
+        <li><strong>Developer Privacy Center:</strong> <a href="../index.html">All ANGS Corp Apps Privacy Policies</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 ANGS Corp. All rights reserved. &bull; <a href="../index.html">Developer Privacy Center</a></p>
+    </footer>
+  </div>
+</body>
+</html>

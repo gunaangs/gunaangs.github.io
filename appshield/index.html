@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — AppShield - Mobile App Scanner</title>
+  <meta name="description" content="Privacy Policy for AppShield - Mobile App Scanner (com.angs.appshield) by ANGS Corp. 100% offline, on-device heuristic security scanner.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0F1117;
+      --card-bg: #1A1D27;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text: #F3F4F6;
+      --text-muted: #9CA3AF;
+      --accent: #10B981;
+      --accent-light: #34D399;
+      --accent-bg: rgba(16, 185, 129, 0.12);
+      --code-bg: #11131A;
+      --max-width: 860px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F9FAFB;
+        --card-bg: #FFFFFF;
+        --card-border: rgba(0, 0, 0, 0.08);
+        --text: #111827;
+        --text-muted: #4B5563;
+        --accent: #059669;
+        --accent-light: #10B981;
+        --accent-bg: rgba(16, 185, 129, 0.12);
+        --code-bg: #F3F4F6;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 64px 16px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .breadcrumb-nav {
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--accent-light);
+      text-decoration: none;
+      padding: 6px 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-bg);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 32px 24px;
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-bg);
+      color: var(--accent-light);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 18px 0 8px 0;
+      color: var(--text);
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    ul, ol {
+      margin: 12px 0 16px 24px;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .highlight-box {
+      background: var(--accent-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border-left: 4px solid #EF4444;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .warning-box p:last-child,
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border: 1px solid var(--card-border);
+      padding: 12px 16px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--code-bg);
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    code {
+      font-family: monospace;
+      font-size: 0.88em;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    a {
+      color: var(--accent-light);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 12px 48px 12px;
+      }
+      header {
+        padding: 24px 16px;
+      }
+      .card {
+        padding: 20px 16px;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      th, td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="breadcrumb-nav">
+      <a href="../index.html" class="back-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        ANGS Corp Developer Privacy Center
+      </a>
+    </nav>
+
+    <header>
+      <div class="badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        100% Offline &amp; On-Device Security Audit
+      </div>
+      <h1>Privacy Policy for AppShield - Mobile App Scanner</h1>
+      <div class="meta">
+        <span>Application: <strong>AppShield - Mobile App Scanner</strong></span>
+        <span>Developer: <strong>ANGS Corp</strong></span>
+        <span>Package: <code>com.angs.appshield</code></span>
+        <span>Last Updated: <strong>September 19, 2026</strong></span>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2>1. Overview &amp; Privacy Commitment</h2>
+      <p>Welcome to <strong>AppShield - Mobile App Scanner</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;), developed and published by <strong>ANGS Corp</strong>.</p>
+      <p>AppShield is a standalone, offline mobile security scanner designed to inspect installed applications, evaluate heuristic risk scores, audit dangerous permissions, and detect sideloaded APKs. AppShield is architected strictly as a <strong>100% on-device, zero-telemetry utility</strong>.</p>
+      <div class="highlight-box">
+        <p><strong>Zero-Server Architecture:</strong> All package scanning, heuristic risk calculation, and permission audits are executed locally on your device hardware. Your list of installed applications is never transmitted to, inspected by, or stored on ANGS Corp servers or any external third-party cloud.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2. Data Handled &amp; Device Permissions</h2>
+      <p>AppShield only accesses information strictly required to perform on-device security scans upon your request:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission / API</th>
+            <th>How It Is Used</th>
+            <th>Data Storage / Transmission</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Package Visibility (QUERY_ALL_PACKAGES)</strong></td>
+            <td>Allows AppShield to enumerate installed applications and inspect package metadata (permissions requested, installer package name, signatures, target SDK).</td>
+            <td><strong>Never uploaded.</strong> Processed strictly in volatile device memory and discarded when the scan completes.</td>
+          </tr>
+          <tr>
+            <td><strong>Storage Access (Read / Write)</strong></td>
+            <td>Used solely when you choose to export or save a generated security audit report (e.g. PDF or JSON format) to your local file system.</td>
+            <td>Stored solely on your local device. ANGS Corp has zero access to saved audit reports.</td>
+          </tr>
+          <tr>
+            <td><strong>Notifications</strong></td>
+            <td>Delivers on-device notifications when scheduled scans complete or critical permission changes occur.</td>
+            <td>Operates completely on-device without remote push servers.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>3. Third-Party Services</h2>
+      <p>AppShield operates offline for all scanning functionality. The following third-party library is integrated with strict isolation:</p>
+      <h3>Google Mobile Ads (AdMob)</h3>
+      <ul>
+        <li>AppShield may display advertisements provided by Google Mobile Ads.</li>
+        <li><strong>Data Processed:</strong> Google may collect advertising identifiers, approximate IP location, and ad interaction metrics to deliver, personalize, and measure ads.</li>
+        <li><strong>Consent Management:</strong> We implement Google's User Messaging Platform (UMP) to obtain explicit consent for personalized ads in compliance with GDPR and CCPA.</li>
+        <li><strong>Strict Isolation:</strong> The Google Mobile Ads SDK runs in an isolated sandbox and has <strong>zero access</strong> to your installed application inventory, scan results, or audit reports.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Local Storage Architecture, Data Theft Disclaimer &amp; Limitation of Liability</h2>
+      <div class="warning-box">
+        <p><strong>Important Legal Notice:</strong> AppShield operates exclusively as an on-device heuristic assessment utility. ANGS Corp operates no backend servers holding your device data, application lists, or scan logs. Because all operations remain on your device, <strong>ANGS Corp bears no legal responsibility or liability for any data theft, malware infection, unauthorized access, or loss occurring on your device.</strong></p>
+      </div>
+
+      <h3>4.1 Exclusively Local-First Processing (Zero Remote Storage)</h3>
+      <p>AppShield does not transmit, back up, or duplicate your installed application inventory, file structures, or risk metrics to any remote server. ANGS Corp has no custody, knowledge, or capability to view or restore your on-device scan history.</p>
+
+      <h3>4.2 Disclaimer Regarding Heuristic Detection &amp; Device Security</h3>
+      <p>Under no circumstances shall ANGS Corp be held liable for:</p>
+      <ol>
+        <li><strong>Advisory Nature of Scans:</strong> AppShield's heuristic risk scores are automated advisory indicators based on permissions and metadata. They do not constitute guaranteed identification of all malware or zero-day threats.</li>
+        <li><strong>Third-Party Applications:</strong> Actions, data theft, privacy violations, or security breaches committed by third-party applications installed on your device.</li>
+        <li><strong>Physical Device Loss or Malware Infiltration:</strong> Physical loss of your device, unauthorized physical access, or advanced malware compromising operating system sandboxing.</li>
+        <li><strong>Operating System Modifications:</strong> Compromises resulting from rooted, jailbroken, bootloader-unlocked, or tampered operating system environments.</li>
+      </ol>
+
+      <h3>4.3 "AS IS" Warranty and Statutory Limitation of Liability</h3>
+      <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APPSHIELD IS PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS, WITHOUT WARRANTIES OF ANY KIND. ANGS CORP SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL ANGS CORP BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THE APPLICATION.</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>5. User Rights &amp; Data Erasure</h2>
+      <p>Because AppShield stores audit reports and preferences only on your device, you have complete control over all data:</p>
+      <ul>
+        <li><strong>Clearing Data:</strong> You can clear application cache and local scan history at any time via Android System Settings.</li>
+        <li><strong>Uninstallation:</strong> Uninstalling AppShield permanently destroys all locally generated scan caches, settings, and files.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. Children's Privacy</h2>
+      <p>AppShield is not directed to children under 13 years of age (or 16 in the EEA). We do not collect personal information from any user.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. Policy Updates &amp; Contact</h2>
+      <p>We may update this Privacy Policy periodically. Changes will be posted on this page with an updated &ldquo;Last Updated&rdquo; date.</p>
+      <p>If you have questions regarding this Privacy Policy, please contact us:</p>
+      <ul>
+        <li><strong>Organization:</strong> ANGS Corp</li>
+        <li><strong>Developer Privacy Center:</strong> <a href="../index.html">All ANGS Corp Apps Privacy Policies</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 ANGS Corp. All rights reserved. &bull; <a href="../index.html">Developer Privacy Center</a></p>
+    </footer>
+  </div>
+</body>
+</html>
