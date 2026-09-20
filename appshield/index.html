@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — AppShield - Mobile App Scanner</title>
-  <meta name="description" content="Privacy Policy for AppShield - Mobile App Scanner (com.angs.appshield) by ANGS Corp. 100% offline, on-device heuristic security scanner.">
+  <title>Privacy Policy — AppShield: Mobile Security</title>
+  <meta name="description" content="Privacy Policy for AppShield: Mobile Security (com.angs.appshield) by Angs Corp. 100% on-device heuristic security scanner, privacy matrix auditor & device optimizer.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -256,7 +256,7 @@
     <nav class="breadcrumb-nav">
       <a href="../#apps" class="back-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to Apps by ANGS Corp
+        Back to Apps by Angs Corp
       </a>
     </nav>
 
@@ -265,27 +265,27 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
         100% Offline &amp; On-Device Security Audit
       </div>
-      <h1>Privacy Policy for AppShield - Mobile App Scanner</h1>
+      <h1>Privacy Policy for AppShield: Mobile Security</h1>
       <div class="meta">
-        <span>Application: <strong>AppShield - Mobile App Scanner</strong></span>
-        <span>Developer: <strong>ANGS Corp</strong></span>
+        <span>Application: <strong>AppShield: Mobile Security (v3.0.0)</strong></span>
+        <span>Developer: <strong>Angs Corp</strong></span>
         <span>Package: <code>com.angs.appshield</code></span>
-        <span>Last Updated: <strong>September 19, 2026</strong></span>
+        <span>Last Updated: <strong>September 20, 2026</strong></span>
       </div>
     </header>
 
     <div class="card">
       <h2>1. Overview &amp; Privacy Commitment</h2>
-      <p>Welcome to <strong>AppShield - Mobile App Scanner</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;), developed and published by <strong>ANGS Corp</strong>.</p>
-      <p>AppShield is a standalone, offline mobile security scanner designed to inspect installed applications, evaluate heuristic risk scores, audit dangerous permissions, and detect sideloaded APKs. AppShield is architected strictly as a <strong>100% on-device, zero-telemetry utility</strong>.</p>
+      <p>Welcome to <strong>AppShield: Mobile Security</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;), developed and published by <strong>Angs Corp</strong>.</p>
+      <p>AppShield is a standalone, local-first mobile security scanner, privacy auditor, and system optimization utility. It is designed to inspect installed applications, calculate heuristic risk scores, audit dangerous sensor and system permissions, detect sideloaded APKs, boost system memory, and clean residual junk files. AppShield is architected strictly as a <strong>100% on-device, zero-telemetry utility</strong>.</p>
       <div class="highlight-box">
-        <p><strong>Zero-Server Architecture:</strong> All package scanning, heuristic risk calculation, and permission audits are executed locally on your device hardware. Your list of installed applications is never transmitted to, inspected by, or stored on ANGS Corp servers or any external third-party cloud.</p>
+        <p><strong>Zero-Server Architecture:</strong> All package scanning, heuristic risk calculation, memory optimization, and permission audits are executed locally on your device hardware. Your list of installed applications and device telemetry are never transmitted to, inspected by, or stored on Angs Corp servers or any external third-party cloud.</p>
       </div>
     </div>
 
     <div class="card">
       <h2>2. Data Handled &amp; Device Permissions</h2>
-      <p>AppShield only accesses information strictly required to perform on-device security scans upon your request:</p>
+      <p>AppShield only accesses information strictly required to perform on-device security scans, privacy audits, and device maintenance upon your initiation:</p>
       <table>
         <thead>
           <tr>
@@ -296,19 +296,34 @@
         </thead>
         <tbody>
           <tr>
-            <td><strong>Package Visibility (QUERY_ALL_PACKAGES)</strong></td>
-            <td>Allows AppShield to enumerate installed applications and inspect package metadata (permissions requested, installer package name, signatures, target SDK).</td>
-            <td><strong>Never uploaded.</strong> Processed strictly in volatile device memory and discarded when the scan completes.</td>
+            <td><strong>Package Visibility (<code>QUERY_ALL_PACKAGES</code>)</strong></td>
+            <td>Allows AppShield to enumerate installed applications and inspect package metadata (permissions requested, installer package name, signatures, target SDK) for heuristic risk analysis and the Privacy Matrix.</td>
+            <td><strong>Never uploaded.</strong> Processed strictly in volatile device memory and local on-device SQLite database for trend reporting.</td>
           </tr>
           <tr>
-            <td><strong>Storage Access (Read / Write)</strong></td>
-            <td>Used solely when you choose to export or save a generated security audit report (e.g. PDF or JSON format) to your local file system.</td>
-            <td>Stored solely on your local device. ANGS Corp has zero access to saved audit reports.</td>
+            <td><strong>Memory Management (<code>KILL_BACKGROUND_PROCESSES</code>)</strong></td>
+            <td>Used locally by the RAM Booster to terminate idle background tasks and reclaim device memory when you initiate memory optimization.</td>
+            <td><strong>Never uploaded.</strong> Operates purely locally via the Android system process manager.</td>
           </tr>
           <tr>
-            <td><strong>Notifications</strong></td>
-            <td>Delivers on-device notifications when scheduled scans complete or critical permission changes occur.</td>
-            <td>Operates completely on-device without remote push servers.</td>
+            <td><strong>App Uninstallation (<code>REQUEST_DELETE_PACKAGES</code>)</strong></td>
+            <td>Enables the App to trigger the standard Android uninstallation prompt for flagged risky or sideloaded applications upon your confirmation.</td>
+            <td><strong>Never uploaded.</strong> Standard Android OS system intent.</td>
+          </tr>
+          <tr>
+            <td><strong>Notifications (<code>POST_NOTIFICATIONS</code> &amp; <code>RECEIVE_BOOT_COMPLETED</code>)</strong></td>
+            <td>Delivers on-device notifications for scheduled security audits, high-risk detection alerts, and scan reminders; reschedules local alarms after device reboot.</td>
+            <td>Operates completely on-device via Android WorkManager without remote push servers.</td>
+          </tr>
+          <tr>
+            <td><strong>Storage Inspection (Deep Cleaner &amp; Residual Junk)</strong></td>
+            <td>Inspects storage directories strictly locally to identify temporary app cache, residual APK packages, and large files to help you reclaim storage space.</td>
+            <td>Processed strictly on-device. Zero file contents or documents are read, uploaded, or transmitted off-device.</td>
+          </tr>
+          <tr>
+            <td><strong>Advertising Identifier (<code>AD_ID</code>)</strong></td>
+            <td>Used exclusively by the Google Mobile Ads SDK (AdMob) to deliver advertisements and prevent invalid ad traffic, subject to user consent.</td>
+            <td>Handled by Google Mobile Ads SDK in accordance with Google's Privacy Policy and UMP consent framework.</td>
           </tr>
         </tbody>
       </table>
@@ -316,27 +331,27 @@
 
     <div class="card">
       <h2>3. Third-Party Services</h2>
-      <p>AppShield operates offline for all scanning functionality. The following third-party library is integrated with strict isolation:</p>
+      <p>AppShield operates offline for all scanning and device optimization functionality. The following third-party library is integrated with strict isolation:</p>
       <h3>Google Mobile Ads (AdMob)</h3>
       <ul>
-        <li>AppShield may display advertisements provided by Google Mobile Ads.</li>
+        <li>AppShield displays advertisements provided by Google Mobile Ads.</li>
         <li><strong>Data Processed:</strong> Google may collect advertising identifiers, approximate IP location, and ad interaction metrics to deliver, personalize, and measure ads.</li>
-        <li><strong>Consent Management:</strong> We implement Google's User Messaging Platform (UMP) to obtain explicit consent for personalized ads in compliance with GDPR and CCPA.</li>
-        <li><strong>Strict Isolation:</strong> The Google Mobile Ads SDK runs in an isolated sandbox and has <strong>zero access</strong> to your installed application inventory, scan results, or audit reports.</li>
+        <li><strong>Consent Management:</strong> We implement Google's User Messaging Platform (UMP) to obtain explicit consent for personalized ads in compliance with GDPR, CCPA, and applicable privacy regulations.</li>
+        <li><strong>Strict Isolation:</strong> The Google Mobile Ads SDK runs in an isolated sandbox and has <strong>zero access</strong> to your installed application inventory, risk scores, sensor privacy matrix, or audit reports.</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>4. Local Storage Architecture, Data Theft Disclaimer &amp; Limitation of Liability</h2>
       <div class="warning-box">
-        <p><strong>Important Legal Notice:</strong> AppShield operates exclusively as an on-device heuristic assessment utility. ANGS Corp operates no backend servers holding your device data, application lists, or scan logs. Because all operations remain on your device, <strong>ANGS Corp bears no legal responsibility or liability for any data theft, malware infection, unauthorized access, or loss occurring on your device.</strong></p>
+        <p><strong>Important Legal Notice:</strong> AppShield operates exclusively as an on-device heuristic assessment utility. Angs Corp operates no backend servers holding your device data, application lists, or scan logs. Because all operations remain on your device, <strong>Angs Corp bears no legal responsibility or liability for any data theft, malware infection, unauthorized access, or loss occurring on your device.</strong></p>
       </div>
 
       <h3>4.1 Exclusively Local-First Processing (Zero Remote Storage)</h3>
-      <p>AppShield does not transmit, back up, or duplicate your installed application inventory, file structures, or risk metrics to any remote server. ANGS Corp has no custody, knowledge, or capability to view or restore your on-device scan history.</p>
+      <p>AppShield does not transmit, back up, or duplicate your installed application inventory, file structures, or risk metrics to any remote server. Angs Corp has no custody, knowledge, or capability to view or restore your on-device scan history.</p>
 
       <h3>4.2 Disclaimer Regarding Heuristic Detection &amp; Device Security</h3>
-      <p>Under no circumstances shall ANGS Corp be held liable for:</p>
+      <p>Under no circumstances shall Angs Corp be held liable for:</p>
       <ol>
         <li><strong>Advisory Nature of Scans:</strong> AppShield's heuristic risk scores are automated advisory indicators based on permissions and metadata. They do not constitute guaranteed identification of all malware or zero-day threats.</li>
         <li><strong>Third-Party Applications:</strong> Actions, data theft, privacy violations, or security breaches committed by third-party applications installed on your device.</li>
@@ -345,13 +360,14 @@
       </ol>
 
       <h3>4.3 "AS IS" Warranty and Statutory Limitation of Liability</h3>
-      <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APPSHIELD IS PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS, WITHOUT WARRANTIES OF ANY KIND. ANGS CORP SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL ANGS CORP BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THE APPLICATION.</strong></p>
+      <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APPSHIELD IS PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS, WITHOUT WARRANTIES OF ANY KIND. Angs Corp SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL Angs Corp BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THE APPLICATION.</strong></p>
     </div>
 
     <div class="card">
       <h2>5. User Rights &amp; Data Erasure</h2>
       <p>Because AppShield stores audit reports and preferences only on your device, you have complete control over all data:</p>
       <ul>
+        <li><strong>In-App Reset:</strong> You can reset scan history, trusted apps whitelists, and cached data at any time directly in AppShield Settings.</li>
         <li><strong>Clearing Data:</strong> You can clear application cache and local scan history at any time via Android System Settings.</li>
         <li><strong>Uninstallation:</strong> Uninstalling AppShield permanently destroys all locally generated scan caches, settings, and files.</li>
       </ul>
@@ -367,13 +383,15 @@
       <p>We may update this Privacy Policy periodically. Changes will be posted on this page with an updated &ldquo;Last Updated&rdquo; date.</p>
       <p>If you have questions regarding this Privacy Policy, please contact us:</p>
       <ul>
-        <li><strong>Developer:</strong> ANGS Corp</li>
-        <li><strong>Developer Portfolio:</strong> <a href="../#apps">ANGS Corp Apps</a></li>
+        <li><strong>Developer:</strong> Angs Corp</li>
+        <li><strong>Developer Support Email:</strong> <a href="mailto:angssecure@gmail.com">angssecure@gmail.com</a></li>
+        <li><strong>Developer Privacy Center:</strong> <a href="https://gunaangs.github.io/">https://gunaangs.github.io/</a></li>
+        <li><strong>Developer Portfolio:</strong> <a href="../#apps">Angs Corp Apps</a></li>
       </ul>
     </div>
 
     <footer>
-      <p>&copy; 2026 ANGS Corp. All rights reserved. &bull; <a href="../#apps">ANGS Corp</a></p>
+      <p>&copy; 2026 Angs Corp. All rights reserved. &bull; <a href="../#apps">Angs Corp</a></p>
     </footer>
   </div>
 </body>
