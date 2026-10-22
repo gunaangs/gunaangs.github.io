@@ -1,0 +1,34 @@
+{
+  "com.angs.securenotes": {
+    "appName": "Secure Note's",
+    "latestVersion": "26.57.81",
+    "versionCode": 80,
+    "minVersion": "26.57.0",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.angs.securenotes",
+    "releaseNotes": "Performance optimizations and database migration resilience."
+  },
+  "com.angs.moneywise": {
+    "appName": "MoneyWise",
+    "latestVersion": "2.0.1",
+    "versionCode": 8,
+    "minVersion": "2.0.0",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.angs.moneywise",
+    "releaseNotes": "CRUD performance optimizations, transaction filtering enhancements, and memory improvements."
+  },
+  "com.angs.appshield": {
+    "appName": "AppShield",
+    "latestVersion": "3.1.0",
+    "versionCode": 12,
+    "minVersion": "3.0.0",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.angs.appshield",
+    "releaseNotes": "Deep cleaner metrics memoization, TabBar optimization, and stability fixes."
+  },
+  "com.angs.pixelsqueeze": {
+    "appName": "PixelSqueeze",
+    "latestVersion": "3.1.0",
+    "versionCode": 9,
+    "minVersion": "3.0.0",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.angs.pixelsqueeze",
+    "releaseNotes": "History and gallery list virtualization optimizations and compression enhancements."
+  }
+}
