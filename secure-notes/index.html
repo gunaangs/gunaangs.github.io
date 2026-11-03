@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Secure Notes</title>
-  <meta name="description" content="Privacy Policy for Secure Notes mobile application (com.angs.securenotes) by Angs Corp. Local-first, zero-knowledge encrypted vault.">
+  <title>Privacy Policy &amp; Terms of Service — Secure Notes</title>
+  <meta name="description" content="Privacy Policy and Terms of Service for Secure Notes (com.angs.securenotes, v26.57.81) by Angs Corp. 100% offline, zero-knowledge encrypted vault for notes, credentials, and media.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,9 +18,6 @@
       --accent: #6366F1;
       --accent-light: #818CF8;
       --accent-bg: rgba(99, 102, 241, 0.12);
-      --success: #10B981;
-      --success-bg: rgba(16, 185, 129, 0.12);
-      --warning: #F59E0B;
       --code-bg: #11131A;
       --max-width: 860px;
     }
@@ -35,11 +32,12 @@
         --accent: #4F46E5;
         --accent-light: #6366F1;
         --accent-bg: rgba(79, 70, 229, 0.08);
-        --success: #059669;
-        --success-bg: rgba(5, 150, 105, 0.08);
-        --warning: #D97706;
         --code-bg: #F3F4F6;
       }
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     * {
@@ -49,169 +47,16 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.65;
-      padding: 32px 16px 64px 16px;
-      -webkit-font-smoothing: antialiased;
+      padding: 24px 16px 64px 16px;
     }
 
     .container {
       max-width: var(--max-width);
       margin: 0 auto;
-    }
-
-    header {
-      margin-bottom: 40px;
-      text-align: center;
-      padding: 32px 20px;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
-      background: var(--success-bg);
-      color: var(--success);
-      font-size: 0.85rem;
-      font-weight: 600;
-      border-radius: 9999px;
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      letter-spacing: -0.02em;
-    }
-
-    .meta {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .meta strong {
-      color: var(--text);
-    }
-
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
-    }
-
-    h2 {
-      font-size: 1.35rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border-bottom: 1px solid var(--card-border);
-      padding-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin: 20px 0 10px 0;
-      color: var(--text);
-    }
-
-    p {
-      margin-bottom: 14px;
-      color: var(--text);
-      font-size: 0.98rem;
-    }
-
-    ul, ol {
-      margin-left: 24px;
-      margin-bottom: 16px;
-    }
-
-    li {
-      margin-bottom: 8px;
-      font-size: 0.96rem;
-    }
-
-    strong {
-      color: var(--text);
-    }
-
-    .highlight-box {
-      background: var(--accent-bg);
-      border-left: 4px solid var(--accent);
-      padding: 16px 20px;
-      border-radius: 8px;
-      margin: 18px 0;
-    }
-
-    .highlight-box p:last-child {
-      margin-bottom: 0;
-    }
-
-    .warning-box {
-      background: rgba(239, 68, 68, 0.1);
-      border-left: 4px solid #EF4444;
-      padding: 16px 20px;
-      border-radius: 8px;
-      margin: 18px 0;
-    }
-
-    .warning-box p:last-child {
-      margin-bottom: 0;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 18px 0;
-      font-size: 0.92rem;
-    }
-
-    th, td {
-      border: 1px solid var(--card-border);
-      padding: 12px 16px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background: var(--code-bg);
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    code {
-      font-family: monospace;
-      font-size: 0.88em;
-      background: var(--code-bg);
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-
-    a {
-      color: var(--accent-light);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     .breadcrumb-nav {
@@ -239,28 +84,247 @@
       text-decoration: none;
     }
 
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 32px 24px;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-bg);
+      color: var(--accent-light);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .doc-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+      position: sticky;
+      top: 12px;
+      z-index: 40;
+      background: var(--bg);
+      padding: 8px 0;
+      backdrop-filter: blur(8px);
+    }
+
+    .doc-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-muted);
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      transition: all 0.2s ease;
+    }
+
+    .doc-tab:hover, .doc-tab:focus {
+      color: var(--text);
+      border-color: var(--accent);
+      background: var(--accent-bg);
+    }
+
+    .section-divider {
+      margin: 40px 0 24px 0;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent-bg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-divider h2 {
+      font-size: 1.6rem;
+      color: var(--accent-light);
+      margin-bottom: 0;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 18px 0 8px 0;
+      color: var(--text);
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin: 12px 0 16px 20px;
+      color: var(--text);
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--card-border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    th {
+      background: var(--code-bg);
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    td strong {
+      color: var(--text);
+    }
+
+    .highlight-box {
+      background: var(--accent-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+
+    .highlight-box p {
+      color: var(--text);
+      margin: 0;
+    }
+
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border-left: 4px solid #EF4444;
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+
+    .warning-box p {
+      color: var(--text);
+      margin: 0;
+    }
+
+    a {
+      color: var(--accent-light);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
     footer {
       text-align: center;
-      margin-top: 48px;
-      font-size: 0.88rem;
+      padding: 32px 0 16px 0;
       color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent-light);
     }
 
     @media (max-width: 640px) {
       body {
         padding: 16px 12px 48px 12px;
       }
-      header {
-        padding: 24px 16px;
-      }
-      .card {
+      header, .card {
         padding: 20px 16px;
       }
       h1 {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
       }
       th, td {
         padding: 8px 10px;
+        font-size: 0.82rem;
       }
     }
   </style>
@@ -273,27 +337,54 @@
         Back to Apps by Angs Corp
       </a>
     </nav>
+
     <header>
       <div class="badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        Zero-Knowledge &amp; Local-First
+        100% Offline &amp; Zero-Knowledge Encrypted Vault
       </div>
-      <h1>Privacy Policy for Secure Notes</h1>
+      <h1>Privacy Policy &amp; Terms of Service</h1>
+      <p style="color: var(--text-muted); margin-top: 4px;">Legal terms, zero-knowledge privacy commitments, and license agreement for Secure Notes.</p>
       <div class="meta">
-        <span>Application: <strong>Secure Notes</strong></span>
+        <span>Application: <strong>Secure Notes (v26.57.81)</strong></span>
         <span>Developer: <strong>Angs Corp</strong></span>
         <span>Package: <code>com.angs.securenotes</code></span>
-        <span>Last Updated: <strong>September 19, 2026</strong></span>
+        <span>Last Updated: <strong>November 3, 2026</strong></span>
       </div>
     </header>
+
+    <nav class="doc-nav" aria-label="Document Navigation">
+      <a href="#privacy" class="doc-tab">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Privacy Policy
+      </a>
+      <a href="#terms" class="doc-tab">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Terms of Service
+      </a>
+    </nav>
+
+    <!-- ──────────────────────────────────────────────────────────── -->
+    <!-- PART I: PRIVACY POLICY -->
+    <!-- ──────────────────────────────────────────────────────────── -->
+    <div id="privacy" class="section-divider">
+      <h2>Part I: Privacy Policy</h2>
+    </div>
 
     <div class="card">
       <h2>1. Overview &amp; Our Core Philosophy</h2>
       <p>Welcome to <strong>Secure Notes</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;), developed and operated by <strong>Angs Corp</strong>.</p>
       <p>Secure Notes is designed from the ground up as a <strong>local-first, privacy-first secure vault</strong>. We firmly believe that your private notes, passwords, financial records, and personal media belong solely to you. We do <strong>not</strong> operate centralized servers that store your vault data, and we cannot read, decrypt, access, or sell your information under any circumstances.</p>
       
+      <div class="warning-box">
+        <p><strong>CRITICAL NOTICE — ZERO DEVELOPER BACKUPS &amp; 100% LOCAL STORAGE ARCHITECTURE:</strong></p>
+        <p>Secure Notes is a <strong>100% offline, local storage-based application</strong>. <strong>There are NO cloud backups, automated server backups, remote databases, or cloud sync services provided by Angs Corp or the developer.</strong> All your private notes, credentials, passwords, budgets, attachments, and encryption keys reside strictly and exclusively on your physical device hardware.</p>
+        <p style="margin-top: 8px;"><strong>100% USER RESPONSIBILITY FOR DATA LEAKS, THEFT &amp; DEVICE SECURITY:</strong></p>
+        <p>Because Angs Corp does not possess, transmit, or back up your data on any server, <strong>Angs Corp bears ZERO responsibility or liability for any data leak, data breach, unauthorized access, exfiltration, or data theft.</strong> If any data loss, breach, or theft occurs because your device is compromised, hacked, infected with malware/spyware, physically lost, stolen, rooted, jailbroken, unlocked, or left unattended, <strong>it is 100% the responsibility of the user side and NOT the developer side.</strong> You are solely responsible for securing your physical device, remembering your Master Password, and generating your own manual local encrypted backups (.snbackup).</p>
+      </div>
+
       <div class="highlight-box">
-        <p><strong>Zero-Knowledge Guarantee:</strong> All personal data is highly encrypted on your device using hardware-backed cryptographic keys. Because encryption and decryption occur solely on your local device, no external party has access to your master keys or plaintext data.</p>
+        <p><strong>Zero-Knowledge Guarantee:</strong> All personal data is strongly encrypted on your device using hardware-backed cryptographic keys (iOS Keychain / Android Keystore). Because encryption and decryption occur solely on your local device, no external party—including Angs Corp—has access to your master keys or plaintext data.</p>
       </div>
     </div>
 
@@ -303,7 +394,7 @@
       
       <h3>2.1 Encrypted Vault Information</h3>
       <ul>
-        <li><strong>Personal Notes:</strong> Note content, formatting, folders, and tags.</li>
+        <li><strong>Personal Notes:</strong> Rich text note content, headers, lists, tags, and folders.</li>
         <li><strong>Credentials &amp; Passwords:</strong> Account titles, usernames, passwords, categories, and custom secure fields.</li>
         <li><strong>Financial Records:</strong> Accounts, expenses, income transactions, recurring entries, budgets, and receipt images.</li>
         <li><strong>Secure Media Gallery:</strong> Encrypted private photos, audio notes, and video files.</li>
@@ -311,166 +402,141 @@
 
       <h3>2.2 Storage &amp; Encryption Safeguards</h3>
       <ul>
-        <li><strong>High-Grade Local Encryption:</strong> All vault data and media files are strongly encrypted before storage on your device.</li>
+        <li><strong>High-Grade Local Encryption:</strong> All vault data and media files are strongly encrypted at rest before storage.</li>
         <li><strong>Hardware-Backed Security:</strong> Cryptographic keys are protected using your device's native secure hardware storage (iOS Keychain / Android Keystore).</li>
         <li><strong>Volatile Memory Management:</strong> Decrypted plaintext in memory is temporary and is immediately wiped upon screen lock, backgrounding, or session timeout.</li>
       </ul>
-
-      <h3>2.3 Preferences &amp; Configuration</h3>
-      <p>Non-sensitive preferences (selected theme, language/locale, auto-lock timeout duration, and onboarding status) are stored locally in the application sandbox to preserve your app settings.</p>
     </div>
 
     <div class="card">
-      <h2>3. Device Permissions and Usage</h2>
-      <p>Secure Notes requests device permissions only when necessary to perform actions you initiate:</p>
+      <h2>3. Device Permissions &amp; Hardware Security</h2>
       <table>
         <thead>
           <tr>
             <th>Permission</th>
             <th>Purpose</th>
+            <th>Handling</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Biometrics</strong> (Face ID / Fingerprint)</td>
-            <td>Used to authenticate and unlock your vault. Biometric authentication is handled entirely by your device OS. The App never captures, accesses, or transmits your biometric data.</td>
+            <td><strong>Biometrics (Face ID / Fingerprint)</strong></td>
+            <td>Enables fast, secure biometric vault unlock.</td>
+            <td>Authentication is handled entirely by your operating system. The app never accesses raw biometric data.</td>
           </tr>
           <tr>
             <td><strong>Camera</strong></td>
-            <td>Used to take photos or record videos directly into the encrypted media gallery, or capture receipt photos linked to expense entries.</td>
+            <td>Used solely to capture photos or videos directly into the encrypted vault or take receipt photos.</td>
+            <td>Encrypted immediately and saved locally in the app sandbox. Never uploaded.</td>
           </tr>
           <tr>
-            <td><strong>Microphone / Audio</strong></td>
-            <td>Used to record audio notes or capture video sound in media utilities.</td>
+            <td><strong>Microphone &amp; Audio</strong></td>
+            <td>Used to record encrypted voice notes within the media gallery.</td>
+            <td>Saved locally in encrypted format. Never transmitted off-device.</td>
           </tr>
           <tr>
-            <td><strong>Photos &amp; Storage</strong></td>
-            <td>Used to import images/videos into your encrypted vault or save exported media to your device storage upon your explicit command.</td>
-          </tr>
-          <tr>
-            <td><strong>Local Network / Wi-Fi</strong></td>
-            <td>Used solely for direct, peer-to-peer (P2P) device-to-device migration and file transfer between nearby devices on the same local network without going through external servers.</td>
-          </tr>
-          <tr>
-            <td><strong>Notifications</strong></td>
-            <td>Used to deliver on-device reminders, budget thresholds, and auto-lock security warnings.</td>
-          </tr>
-          <tr>
-            <td><strong>Haptics &amp; Vibration</strong></td>
-            <td>Provides tactile feedback for button presses, authentication events, and accessibility cues.</td>
+            <td><strong>Storage &amp; Documents</strong></td>
+            <td>Used to import/export encrypted backup files upon your explicit instruction.</td>
+            <td>Handled exclusively locally on your device.</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <div class="card">
-      <h2>4. Third-Party Services</h2>
-      <p>We work with trusted third-party SDKs to support advertising and notification delivery while maintaining complete vault isolation:</p>
-
+      <h2>4. Third-Party Services &amp; Advertising</h2>
       <h3>4.1 Google Mobile Ads (AdMob)</h3>
-      <ul>
-        <li>The App displays advertisements provided by Google Mobile Ads.</li>
-        <li><strong>Data Processed:</strong> Google may collect advertising identifiers, approximate IP location, and ad interaction metrics for ad serving, measurement, and fraud prevention.</li>
-        <li><strong>Consent Management:</strong> We integrate Google's User Messaging Platform (UMP) to obtain GDPR, ePrivacy, and CCPA user consent in applicable regions.</li>
-        <li><strong>Complete Separation:</strong> The Ad SDK runs in an isolated sandbox with <strong>zero access</strong> to your encrypted vault data, notes, passwords, financial records, photos, or keys.</li>
-      </ul>
+      <p>Secure Notes displays advertisements provided by Google Mobile Ads to support continued free development. Consent is managed via Google's UMP framework. The advertising SDK runs in an isolated container and has <strong>zero access</strong> to your notes, passwords, financial ledgers, or media.</p>
 
-      <h3>4.2 Push Notifications (Firebase Realtime Database)</h3>
-      <ul>
-        <li>To deliver push notifications, an anonymous device push token is registered in Firebase Realtime Database.</li>
-        <li>This record contains only the push token and anonymous device platform identifier. It contains <strong>no</strong> names, emails, credentials, notes, or personally identifiable information.</li>
-        <li>Firebase Firestore, Analytics, and Cloud Storage are disabled and not used to collect user data.</li>
-      </ul>
-
-      <h3>4.3 Optional Cloud Backup (Google Drive)</h3>
-      <ul>
-        <li>If you choose to use the Google Drive cloud backup feature, the app interacts with Google Drive using your authenticated Google account.</li>
-        <li>Backup files are encrypted client-side using your credentials before upload.</li>
-        <li>Backups reside exclusively in your personal Google Drive storage. We do not operate intermediate servers and have no access to your files or keys.</li>
-      </ul>
-
-      <h3>4.4 Local Diagnostic Logs</h3>
-      <p>Diagnostic crash logs are stored locally on your device for troubleshooting. They are never automatically uploaded to external telemetry servers and can only be exported manually by you.</p>
+      <h3>4.2 Zero Cloud Sync &amp; 100% Offline Vault</h3>
+      <p>Secure Notes does not operate or connect to any cloud synchronization, external database, or remote backup servers. All notes, credentials, and encrypted backups reside exclusively on your physical device hardware.</p>
     </div>
 
     <div class="card">
-      <h2>5. Data Retention, Erasure &amp; User Control</h2>
-      <p>You have full ownership and control over all information stored in the application:</p>
+      <h2>5. Data Retention &amp; User Control</h2>
       <ul>
-        <li><strong>Export:</strong> You can export your data at any time in standard formats.</li>
-        <li><strong>Trash &amp; Permanent Purge:</strong> Soft-deleted items can be restored or permanently purged from local storage.</li>
-        <li><strong>Wipe Data / Factory Reset:</strong> You can execute a complete data wipe in Settings, which immediately deletes all local database files, keys, and cache files from your device.</li>
-        <li><strong>App Uninstallation:</strong> Uninstalling the application completely erases all local database records, keys, and private files stored in the application sandbox.</li>
+        <li><strong>Export:</strong> Export your data at any time in standard formats.</li>
+        <li><strong>Trash &amp; Permanent Purge:</strong> Soft-deleted items can be restored or permanently purged.</li>
+        <li><strong>Factory Reset:</strong> Clear all data in Settings to wipe all database files, keys, and cache.</li>
+        <li><strong>Uninstallation:</strong> Deleting the app immediately destroys all sandbox records and keys.</li>
+      </ul>
+    </div>
+
+    <!-- ──────────────────────────────────────────────────────────── -->
+    <!-- PART II: TERMS OF SERVICE -->
+    <!-- ──────────────────────────────────────────────────────────── -->
+    <div id="terms" class="section-divider">
+      <h2>Part II: Terms of Service &amp; EULA</h2>
+    </div>
+
+    <div class="card">
+      <h2>6. Agreement to Terms</h2>
+      <p>By downloading, installing, accessing, or using <strong>Secure Notes</strong> (&ldquo;the App&rdquo;), you agree to be bound by these Terms of Service (&ldquo;Terms&rdquo;) and our Privacy Policy. If you do not agree, do not install or use the App.</p>
+      <p>These Terms constitute a legally binding agreement between you (&ldquo;User&rdquo;) and <strong>Angs Corp</strong> (&ldquo;Developer&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
+    </div>
+
+    <div class="card">
+      <h2>7. End User License &amp; Permitted Use</h2>
+      <p>Angs Corp grants you a personal, revocable, non-exclusive, non-transferable, limited license to use Secure Notes on compatible mobile devices you own or control, solely for personal, non-commercial secure storage and organization in accordance with these Terms.</p>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Decompile, reverse engineer, or attempt to derive the source code or cryptographic routines of Secure Notes.</li>
+        <li>Distribute, sublicense, sell, rent, or lease the App.</li>
+        <li>Use the App to store, transmit, or process materials that violate applicable criminal laws or third-party rights.</li>
+        <li>Remove or alter any copyright notices or trademarks of Angs Corp.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>6. Local Storage Architecture, Data Theft Disclaimer &amp; Limitation of Liability</h2>
+      <h2>8. Zero-Knowledge Architecture &amp; Master Password Responsibility</h2>
       <div class="warning-box">
-        <p><strong>Important Legal Notice:</strong> Secure Notes is a 100% offline, local-first utility. Angs Corp operates no servers, databases, or cloud vaults storing your notes, credentials, transactions, or files. Because no user data is hosted or transmitted to developer servers, <strong>Angs Corp bears no legal responsibility or liability for any data leakage, unauthorized access, or data theft occurring on or originating from your device.</strong></p>
+        <p><strong>Master Password &amp; Encryption Key Notice:</strong> Secure Notes uses strong end-to-end local encryption. <strong>Angs Corp does not possess your Master Password, PIN, or encryption keys, and has no backdoor or remote administrative recovery capability.</strong> If you forget your Master Password and have not configured biometric access or recovery credentials, <strong>YOUR DATA CANNOT BE RECOVERED BY Angs Corp.</strong></p>
       </div>
-
-      <h3>6.1 Exclusively Local-First Operation (Zero Server Custody)</h3>
-      <p>Secure Notes is explicitly designed, engineered, and operated as an offline, local-first secure vault. All user content—including personal notes, credentials, passwords, bank/credit records, budgets, transactions, and private media gallery files—is encrypted and saved strictly in your local device's isolated application storage sandbox.</p>
-      <p><strong>Angs Corp does not operate, host, or maintain any centralized servers, cloud databases, intermediate proxies, or remote storage systems holding your vault data.</strong> Consequently:</p>
-      <ul>
-        <li>We cannot view, access, monitor, intercept, copy, or recover your plaintext notes, credentials, or encryption keys.</li>
-        <li>We do not possess master recovery keys, backdoors, or remote admin privileges.</li>
-        <li>Your data never leaves your physical device unless you voluntarily and intentionally trigger an export or configure personal third-party cloud sync (e.g., your personal Google Drive).</li>
-      </ul>
-
-      <h3>6.2 Full Disclaimer of Legal Liability for On-Device Data Theft, Leaks, or Loss</h3>
-      <p>Because Angs Corp never receives, stores, or transmits your sensitive information to developer servers, <strong>Angs Corp, its developers, contributors, officers, and affiliates bear NO LEGAL RESPONSIBILITY OR LIABILITY WHATSOEVER for any data leakage, data breach, unauthorized access, exfiltration, loss, corruption, or data theft that occurs on or originates from your device, operating system, or local storage environment.</strong></p>
-      <p>Under no circumstances shall Angs Corp be held legally or financially liable for security compromises arising from factors outside of the application's direct on-device encryption implementation, including but not limited to:</p>
-      <ol>
-        <li><strong>Malware, Spyware &amp; Malicious Apps:</strong> Any infection of your device by trojans, keyloggers, screen scrapers, unauthorized accessibility services, or malicious third-party software that captures keystrokes, screen contents, or clipboard data.</li>
-        <li><strong>Physical Loss, Theft &amp; Unauthorized Physical Access:</strong> Physical theft of your device, loss of custody, unauthorized physical access while unlocked, shoulder-surfing, or compelled device unlock.</li>
-        <li><strong>Compromised Operating Systems &amp; Rooting/Jailbreaking:</strong> Use of Secure Notes on rooted, jailbroken, bootloader-unlocked, modified, or custom ROM devices where operating system security sandboxes, hardware keystores, or inter-process isolation have been disabled, weakened, or bypassed.</li>
-        <li><strong>User Security Negligence:</strong> Failure by the user to maintain an active device screen lock (PIN, password, pattern, or biometrics), setting weak or guessable Master Passwords, sharing credentials with third parties, or leaving unlocked sessions unattended.</li>
-        <li><strong>Third-Party Services &amp; User-Initiated Exports:</strong> Unauthorized access to your personal cloud accounts (such as Google Drive backups), lost or unencrypted manual export files, or exposure resulting from file sharing initiated by you.</li>
-        <li><strong>Operating System &amp; Hardware Vulnerabilities:</strong> Zero-day exploits, hardware vulnerabilities, memory extraction attacks, or security flaws inherent in the underlying device hardware, firmware, or vendor operating system.</li>
-      </ol>
-
-      <h3>6.3 User Responsibilities for Vault and Device Security</h3>
-      <p>As a user of Secure Notes, you acknowledge and agree that you retain sole and exclusive responsibility for:</p>
-      <ul>
-        <li>Maintaining the physical and digital security of your device, including applying the latest operating system security patches.</li>
-        <li>Setting a robust, unique Master Password and keeping recovery credentials in safe custody.</li>
-        <li>Regularly creating and securely storing encrypted backups to avoid catastrophic data loss in the event of device damage, loss, or hardware failure.</li>
-        <li>Ensuring that your device is free from malware, spyware, and unauthorized monitoring tools.</li>
-      </ul>
-
-      <h3>6.4 Disclaimer of Warranties &amp; Limitation of Liability</h3>
-      <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APPLICATION IS PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS, WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. Angs Corp SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</strong></p>
-      <p><strong>IN NO EVENT SHALL Angs Corp, ITS DIRECTORS, EMPLOYEES, AGENTS, OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES—INCLUDING BUT NOT LIMITED TO LOSS OF DATA, LOSS OF PROFITS, LOSS OF REPUTATION, UNAUTHORIZED DISCLOSURE, IDENTITY THEFT, OR FINANCIAL LOSS—ARISING OUT OF OR IN CONNECTION WITH THE USE OF, INABILITY TO USE, OR DEVICE-LEVEL SECURITY BREACHES INVOLVING THE APPLICATION.</strong></p>
     </div>
 
     <div class="card">
-      <h2>7. Security Safeguards</h2>
-      <p>We apply industry standard security measures:</p>
+      <h2>9. Zero Server Custody, Zero Developer Backups &amp; Data Theft Disclaimer</h2>
+      <div class="warning-box">
+        <p><strong>IMPORTANT LEGAL NOTICE — ZERO DEVELOPER BACKUPS &amp; EXCLUSIVE USER LIABILITY:</strong></p>
+        <p>Secure Notes operates 100% locally. <strong>Angs Corp operates no servers, databases, cloud backups, or remote recovery systems.</strong> Because all data remains exclusively on your device, <strong>Angs Corp bears NO legal responsibility or liability for any data leakage, unauthorized access, or data theft occurring on or originating from your device.</strong></p>
+      </div>
+      <p>Under no circumstances shall Angs Corp be held liable for security compromises arising on your device hardware, operating system, or environment:</p>
       <ul>
-        <li>Robust multi-layer local vault encryption.</li>
-        <li>Hardware-backed keystore integration.</li>
-        <li>Automatic session lock on inactivity or app backgrounding.</li>
-        <li>Clipboard auto-clear after copying passwords.</li>
-        <li>Offline-first operational architecture.</li>
+        <li><strong>No Developer Backups:</strong> Angs Corp does not possess, store, or back up any of your notes, credentials, or keys. If you lose your device or master password without a local backup, your data is permanently lost.</li>
+        <li><strong>100% User Liability for Compromised Devices:</strong> If any data leak or data theft occurs because your device is compromised, hacked, infected by trojans/spyware/keyloggers, physically stolen, lost, or subjected to unauthorized access while unlocked, <strong>it is 100% the responsibility of the user side and NOT the developer side.</strong></li>
+        <li><strong>Rooted &amp; Modified Systems:</strong> Use of Secure Notes on rooted, jailbroken, or tampered operating systems where sandbox isolation or hardware Keystores are bypassed voids all security expectations and is at the user's sole risk.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>8. Children's Privacy</h2>
-      <p>Secure Notes is not directed to children under 13 years of age (or under 16 in the European Economic Area). We do not knowingly collect personal information from children.</p>
+      <h2>10. Disclaimer of Warranties ("AS IS")</h2>
+      <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SECURE NOTES IS PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS, WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY.</strong></p>
+      <p>Angs Corp disclaims all implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the application will be uninterrupted, error-free, or invulnerable to all potential security compromises.</p>
     </div>
 
     <div class="card">
-      <h2>9. Policy Updates &amp; Contact</h2>
-      <p>We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated &ldquo;Last Updated&rdquo; date.</p>
-      <p>If you have any questions or feedback regarding this Privacy Policy, please contact us:</p>
+      <h2>11. Limitation of Liability</h2>
+      <p><strong>IN NO EVENT SHALL Angs Corp, ITS DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES—INCLUDING LOSS OF DATA, LOSS OF PROFITS, OR UNAUTHORIZED DISCLOSURE—ARISING OUT OF OR IN CONNECTION WITH THE USE OF OR INABILITY TO USE THE APPLICATION.</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>12. Intellectual Property</h2>
+      <p>All intellectual property rights in Secure Notes, including trademarks, icons, visual design, and software code, belong exclusively to <strong>Angs Corp</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>13. Governing Law &amp; Jurisdiction</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising hereunder shall be subject to the exclusive jurisdiction of the competent courts in Chennai, Tamil Nadu, India.</p>
+    </div>
+
+    <div class="card">
+      <h2>14. Contact Information</h2>
+      <p>If you have any questions or feedback regarding these Terms or our Privacy Policy, please contact us:</p>
       <ul>
         <li><strong>Developer:</strong> Angs Corp</li>
-        <li><strong>Developer Support Email:</strong> <a href="mailto:angssecure@gmail.com">angssecure@gmail.com</a></li>
+        <li><strong>Support Email:</strong> <a href="mailto:angssecure@gmail.com">angssecure@gmail.com</a></li>
         <li><strong>Developer Privacy Center:</strong> <a href="https://gunaangs.github.io/">https://gunaangs.github.io/</a></li>
-        <li><strong>Developer Portfolio:</strong> <a href="../#apps">Angs Corp Apps</a></li>
+        <li><strong>Showcase Web Apps:</strong> <a href="../#apps">https://gunaangs.github.io/#apps</a></li>
       </ul>
     </div>
 

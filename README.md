@@ -14,6 +14,11 @@ index.html             markup + all copy
 styles.css             design tokens, layout, light/dark themes
 script.js              theme toggle, scroll reveals, active nav link
 404.html               fallback page
+app-versions.json      live version registry for ecosystem apps
+secure-notes/          Privacy Policy & Terms of Service for Secure Notes (v26.57.81)
+moneywise/             Privacy Policy & Terms of Service for MoneyWise (v3.0.0)
+appshield/             Privacy Policy & Terms of Service for AppShield (v3.2.0)
+pixelsqueeze/          Privacy Policy & Terms of Service for PixelSqueeze (v3.2.0)
 icon-securenotes.png   real app icon, 192px, transparent corners
 icon-appshield.png     real app icon, 192px, transparent corners
 icon-pixelsqueeze.png  real app icon, 192px, transparent corners
